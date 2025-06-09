@@ -1,0 +1,45 @@
+Total count for 'PRICE': 4801
+Non-null count for 'PRICE': 4801
+
+Descriptive Statistics:
+               PRICE         BEDS         BATH  PROPERTYSQFT     LATITUDE    LONGITUDE
+count  4.801000e+03  4801.000000  4801.000000   4801.000000  4801.000000  4801.000000
+mean   2.356940e+06     3.356801     2.373861   2184.207862    40.714227   -73.941601
+std    3.135525e+07     2.602315     1.946962   2377.140894     0.087676     0.101082
+min    2.494000e+03     1.000000     0.000000    230.000000    40.499546   -74.253033
+25%    4.990000e+05     2.000000     1.000000   1200.000000    40.639375   -73.987143
+50%    8.250000e+05     3.000000     2.000000   2184.207862    40.726749   -73.949189
+75%    1.495000e+06     4.000000     3.000000   2184.207862    40.771923   -73.870638
+max    2.147484e+09    50.000000    50.000000  65535.000000    40.912729   -73.702450
+
+Missing Values:
+BROKERTITLE                    0
+TYPE                           0
+PRICE                          0
+BEDS                           0
+BATH                           0
+PROPERTYSQFT                   0
+ADDRESS                        0
+STATE                          0
+MAIN_ADDRESS                   0
+ADMINISTRATIVE_AREA_LEVEL_2    0
+LOCALITY                       0
+SUBLOCALITY                    0
+STREET_NAME                    0
+LONG_NAME                      0
+FORMATTED_ADDRESS              0
+LATITUDE                       0
+LONGITUDE                      0
+dtype: int64
+
+Correlation Matrix:
+                  PRICE      BEDS      BATH  PROPERTYSQFT  LATITUDE  LONGITUDE
+PRICE         1.000000  0.052189  0.079371      0.110889 -0.020392  -0.054273
+BEDS          0.052189  1.000000  0.776447      0.420503 -0.060933  -0.004529
+BATH          0.079371  0.776447  1.000000      0.483935 -0.052235  -0.070892
+PROPERTYSQFT  0.110889  0.420503  0.483935      1.000000  0.023413  -0.037308
+LATITUDE     -0.020392 -0.060933 -0.052235      0.023413  1.000000   0.513969
+LONGITUDE    -0.054273 -0.004529 -0.070892     -0.037308  0.513969   1.000000
+
+Outliers detected (using IQR method):
+ {'PRICE': 559, 'BEDS': 224, 'BATH': 111, 'PROPERTYSQFT': 390, 'LATITUDE': 0, 'LONGITUDE': 168}

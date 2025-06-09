@@ -1,0 +1,64 @@
+Linear Regression with BEDS, BATH, PROPERTYSQFT:
+Thetas:  [2449110.406674   -554114.7189786  1462863.72359947 3235857.3887441 ]
+MSE for test data:  12467465083048.688
+r2 for test data:  0.2973107697068864
+adjusted r2 for test data:  0.29510798215110867
+
+Forward stepwise Linear Regression using BEDS, BATH, PROPERTYSQFT, SUBLOCALITY:
+Selected PROPERTYSQFT, Cost: 485430030738174.8
+Selected subloc_New York County, Cost: 484793136366490.56
+Selected subloc_Richmond County, Cost: 484187107483835.06
+Selected BATH, Cost: 483955698633618.4
+Selected subloc_New York, Cost: 483696677206998.75
+Selected BEDS, Cost: 483571954129476.56
+Selected subloc_Brooklyn, Cost: 483537136576717.8
+Selected subloc_Bronx County, Cost: 483522235132023.0
+Selected subloc_Manhattan, Cost: 483508512669816.44
+Selected subloc_Queens County, Cost: 483500587117087.1
+Selected subloc_Kings County, Cost: 483485232614983.56
+Selected subloc_Queens, Cost: 483482809887724.8
+Selected subloc_Dumbo, Cost: 483482292257582.9
+Selected subloc_Brooklyn Heights, Cost: 483482064676710.6
+Selected subloc_Rego Park, Cost: 483481937277083.3
+Selected subloc_Snyder Avenue, Cost: 483481826105232.7
+Selected subloc_Coney Island, Cost: 483481721823996.75
+Selected subloc_Riverdale, Cost: 483481634493084.44
+Selected subloc_Fort Hamilton, Cost: 483481564064717.9
+Selected subloc_Flushing, Cost: 483481501772950.94
+Selected subloc_Jackson Heights, Cost: 483481445876226.75
+Selected subloc_The Bronx, Cost: 483481411180927.4
+Selected subloc_East Bronx, Cost: 483481389528941.56
+Not selected subloc_Staten Island, Cost: 491845513904483.25 - No improvement
+Stopped adding features after subloc_Staten Island due to no improvement.
+Final Model: R-squared: 0.016261216028308323, Adjusted R-squared: 0.01152477222857029, MSE: 966962779057882.8
+Selected Features: ['PROPERTYSQFT', 'subloc_New York County', 'subloc_Richmond County', 'BATH', 'subloc_New York', 'BEDS', 'subloc_Brooklyn', 'subloc_Bronx County', 'subloc_Manhattan', 'subloc_Queens County', 'subloc_Kings County', 'subloc_Queens', 'subloc_Dumbo', 'subloc_Brooklyn Heights', 'subloc_Rego Park', 'subloc_Snyder Avenue', 'subloc_Coney Island', 'subloc_Riverdale', 'subloc_Fort Hamilton', 'subloc_Flushing', 'subloc_Jackson Heights', 'subloc_The Bronx', 'subloc_East Bronx']
+
+
+
+Forward stepwise Linear Regression using BEDS, BATH, PROPERTYSQFT, SUBLOCALITY and regularization:
+Selected PROPERTYSQFT, Cost: 485431289499475.25
+Selected subloc_New York County, Cost: 484794332168514.06
+Selected subloc_Richmond County, Cost: 484188433658521.7
+Selected BATH, Cost: 483956832189608.94
+Selected subloc_New York, Cost: 483697928677795.0
+Selected BEDS, Cost: 483573420270173.2
+Selected subloc_Brooklyn, Cost: 483538633420936.3
+Selected subloc_Bronx County, Cost: 483523711265979.7
+Selected subloc_Manhattan, Cost: 483509991898647.4
+Selected subloc_Queens County, Cost: 483502041255957.1
+Selected subloc_Kings County, Cost: 483486636032747.7
+Selected subloc_Queens, Cost: 483484189964683.25
+Selected subloc_Dumbo, Cost: 483483672722690.94
+Selected subloc_Brooklyn Heights, Cost: 483483445869990.2
+Selected subloc_Rego Park, Cost: 483483319013779.7
+Selected subloc_Snyder Avenue, Cost: 483483208328630.44
+Selected subloc_Coney Island, Cost: 483483104648607.6
+Selected subloc_Riverdale, Cost: 483483016789797.6
+Selected subloc_Fort Hamilton, Cost: 483482946635579.8
+Selected subloc_Flushing, Cost: 483482883904404.4
+Selected subloc_Jackson Heights, Cost: 483482827781428.94
+Selected subloc_The Bronx, Cost: 483482787989197.6
+Selected subloc_Staten Island, Cost: 483482752277095.0
+Selected subloc_East Bronx, Cost: 483482752137076.5
+Final Model with Regularization: R-squared: 0.01626121499707156, Adjusted R-squared: 0.011317804017157318, MSE: 966962780071533.5
+Selected Features with Regularization: ['PROPERTYSQFT', 'subloc_New York County', 'subloc_Richmond County', 'BATH', 'subloc_New York', 'BEDS', 'subloc_Brooklyn', 'subloc_Bronx County', 'subloc_Manhattan', 'subloc_Queens County', 'subloc_Kings County', 'subloc_Queens', 'subloc_Dumbo', 'subloc_Brooklyn Heights', 'subloc_Rego Park', 'subloc_Snyder Avenue', 'subloc_Coney Island', 'subloc_Riverdale', 'subloc_Fort Hamilton', 'subloc_Flushing', 'subloc_Jackson Heights', 'subloc_The Bronx', 'subloc_Staten Island', 'subloc_East Bronx']
